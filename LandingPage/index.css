@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+  
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #838080;
+    position: relative;
+}
+.nav-container{
+    display: flex;
+    gap: 2vw;
+    padding: 10px 20px;
+    font-size: 1.1vw;
+    align-items: center;
+
+}
+.nav-container button{
+    padding: 7px 15px;
+    font-size: 1.4vw;
+    border: none;
+    background-color: rgb(68, 184, 234);
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+}
+.nav-container i{
+    font-weight: 800;
+  
+    display: none;
+
+}
+
+
+.nav-logo{
+    font-size: 2.4vw;
+    font-weight: 700;
+    padding: 10px 20px;
+    
+}
+.nav-logo span{
+    font-size: 3vw;
+    font-family: sans-serif;
+    color: chocolate;
+    margin-top: 2px;
+}
+
+
+
+
+
+section{
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex; 
+    position: relative;
+
+}
+
+
+.left{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    padding: 80px 40px 0;
+}
+.left h1{
+    font-size: 3.5vw;
+}
+.left h1 span{
+    color: cornflowerblue;
+}
+.ri-double-quotes-l,.ri-double-quotes-r{
+    color: red;
+}
+.left h3{
+  padding: 30px 30px 10px 0;
+    font-size: 1.5vw;
+}
+.left button{
+    padding: 10px 20px;
+    font-size: 1.4vw;
+    border: none;
+    background-color: rgb(68, 184, 234);
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+}
+
+.right{
+    width: 50%;
+   height: 100%;
+
+
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+    
+}
+
+
+@media (max-width:650px) {
+    .nav-container h2{
+        display: none;
+    }
+    .nav-container i{
+        display: block;
+        font-size: 6vw;
+    }
+    .nav-container i{
+        display: block;
+    }
+    .nav-container button{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+    }
+    .left,.right{
+        width: 100%;
+        
+    }
+    .nav-logo{
+        font-size: 5vw;
+    }
+    .nav-logo span{
+        font-size: 7vw;
+    } 
+    .left{
+  
+        padding: 30px 20px 0 ;
+        
+    }
+       
+    .left h1{
+        font-size: 8vw;
+        padding-right: 15px;
+      
+    }
+    .left h3{
+     
+        font-size: 5vw;
+        padding-right: 10px;
+    }
+    .left button{
+        padding: 10px 30px;
+        font-size: 7vw;
+        margin-top: 1.3vw;
+        margin-bottom: 2vw;
+        
+    }
+   .main{
+    overflow-y: auto;
+   }
+   .right img{
+    object-fit: cover;
+    object-position: center;
+   }
+   
+    
+
+}
