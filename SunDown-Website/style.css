@@ -209,3 +209,152 @@ nav{
       transform:translate(40%,35%);
     }  
   }
+
+/* page-2 moving text animation */
+ .page-2{
+    min-height: 70vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 5vw 0;
+ } 
+ .moving_text{
+white-space: nowrap;
+overflow-x: auto;
+    
+ }
+ .moving_text::-webkit-scrollbar{
+ display: none;
+ }
+ .con{
+  
+   white-space: nowrap;
+   display: inline-block;
+   animation-name: moving_text;
+   animation-duration: 13s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+
+   
+ }
+
+.moving_text h2{
+    font-size: 12vw;
+    display: inline-block;
+}
+
+.moving_text .gola{
+    height: 50px;
+    width:50px;
+    background-color: #FE330A;
+    border-radius: 50%;
+    border: none;
+    display: inline-block;
+    margin: 2vw 3vw;
+}
+@keyframes moving_text {
+    from{
+transform: translateX(0);
+    }
+    to{
+transform: translateX(-100%);
+    }
+}
+
+
+/* page-3  */
+
+.page-3{
+    height: 110vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6vw;
+    position: relative;
+   
+
+}
+
+.page-3 .text-col{
+    width: 80%;
+z-index: 100;
+    padding-bottom: 4vw ;
+   
+}
+.text-col h1{
+    font-size: 4vw;
+    font-weight: 800;
+    line-height: 11vh;
+  
+   
+}
+.page-3 .img-col{
+    width: 30%;
+   
+    padding-top: 8vw;
+    padding-left: 5%;  
+}
+.img-col img,p{
+    width: 22vw;
+}
+
+.img-col img{
+    object-fit: cover;
+    border-radius: 10px;
+}
+.img-col p{
+    font-size: 1vw;
+    margin-top: 3vw;
+    line-height: 1.5vw;
+}
+
+.page-3 .background_animate1{
+    height: 60vh;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: #FE330A;
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+filter: blur(20px);
+animation-name: animate1;
+animation-duration: 3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes animate1 {
+    from{
+        transform: translate(-20%,-20%);
+    }
+    to{
+        transform: translate(20%,20%); 
+    }
+    
+}
+.page-3 .background_animate2{
+    height: 60vh;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: #FE330A;
+    position: absolute;
+    top: 22vh;
+    left: 20vw;
+filter: blur(20px);
+animation-name: animate1;
+animation-duration: 3.5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes animate2 {
+    from{
+        transform: translate(20%,-20%);
+    }
+    to{
+        transform: translate(-20%,-20%); 
+    }
+    
+}
