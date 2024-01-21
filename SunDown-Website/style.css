@@ -284,7 +284,7 @@ z-index: 100;
 .text-col h1{
     font-size: 4vw;
     font-weight: 800;
-    line-height: 11vh;
+    line-height: 9vh;
   
    
 }
@@ -309,41 +309,43 @@ z-index: 100;
 }
 
 .page-3 .background_animate1{
-    height: 60vh;
-    width: 30vw;
+    height: 70vh;
+    width: 40vw;
     border-radius: 50%;
-    background-color: #FE330A;
+    background-color: #ed2d06;
     position: absolute;
-    top: 20vh;
+    top: 22vh;
     left: 20vw;
-filter: blur(20px);
+filter: blur(50px);
 animation-name: animate1;
 animation-duration: 3s;
 animation-timing-function: linear;
 animation-iteration-count: infinite;
 animation-direction: alternate;
+z-index: 1;
+
 }
 
 @keyframes animate1 {
     from{
-        transform: translate(-20%,-20%);
+        transform: translate(-23px,18px) ;
     }
     to{
-        transform: translate(20%,20%); 
+        transform: translate(23px,-18px) ; 
     }
     
 }
 .page-3 .background_animate2{
-    height: 60vh;
-    width: 30vw;
+    height: 70vh;
+    width: 40vw;
     border-radius: 50%;
-    background-color: #FE330A;
+    background-color: #fe7c0a;
     position: absolute;
     top: 22vh;
     left: 20vw;
-filter: blur(20px);
-animation-name: animate1;
-animation-duration: 3.5s;
+filter: blur(10px);
+animation-name: animate2;
+animation-duration: 3s;
 animation-timing-function: linear;
 animation-iteration-count: infinite;
 animation-direction: alternate;
@@ -351,10 +353,51 @@ animation-direction: alternate;
 
 @keyframes animate2 {
     from{
-        transform: translate(20%,-20%);
+        transform: rotate(-10%,10%) skew(0) ;
     }
     to{
-        transform: translate(-20%,-20%); 
+        transform: translate(10%,-10%) skew(-15deg) ; 
     }
     
 }
+
+
+/* page-4 */
+
+.page-4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 10vh;
+    background-color: #EFEAE3;
+}
+
+.hover-efect{
+    height: 20vh;
+    width: 100%;
+    border-bottom: 1px solid #565555;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.page-4 .hover-efect h1{
+    font-size: 6vw;
+    position: relative;
+    z-index: 100;
+}
+
+.hover-efect .delay{
+    height: 100%;
+    width: 100%;
+    background-color: #fe880a;
+    position: absolute;
+    top: -100%;
+    transition: top ease .3s;
+}
+
+.hover-efect:hover .delay{
+    top: 0;
+    }
