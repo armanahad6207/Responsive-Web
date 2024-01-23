@@ -13,6 +13,21 @@ p{
     margin: 0;
 }
 
+
+.card{
+    height: 50vh;
+    width: 19vw;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    z-index: 999;
+    border-radius: 8px;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+
 .page-1{
     width: 100%;
     min-height: 100vh;
@@ -372,7 +387,7 @@ animation-direction: alternate;
     background-color: #EFEAE3;
 }
 
-.hover-efect{
+.hover_efect{
     height: 20vh;
     width: 100%;
     border-bottom: 1px solid #565555;
@@ -381,15 +396,17 @@ animation-direction: alternate;
     position: relative;
     overflow: hidden;
     cursor: pointer;
+  
 }
 
-.page-4 .hover-efect h1{
-    font-size: 6vw;
+.page-4 .hover_efect h1{
+    font-size: 4vw;
     position: relative;
     z-index: 100;
+    padding: 2vw 3vw;
 }
 
-.hover-efect .delay{
+.hover_efect .delay{
     height: 100%;
     width: 100%;
     background-color: #fe880a;
@@ -398,6 +415,6 @@ animation-direction: alternate;
     transition: top ease .3s;
 }
 
-.hover-efect:hover .delay{
+.hover_efect:hover .delay{
     top: 0;
     }
