@@ -23,3 +23,43 @@ hover_efect.forEach(function(e){
     })
 })
 
+
+
+var design=document.querySelector("#design");
+var project=document.querySelector("#project");
+var executio=document.querySelector("#execution");
+var text=document.querySelector(".text")
+
+var backimg=document.querySelector(".col-2");
+
+design.addEventListener("click",function(){
+   this.style.borderLeft="3px solid red";
+   this.style.color="#fff";
+   project.style.color="#504A45"
+    project.style.borderLeft="3px solid #504A45"
+    execution.style.color="#504A45"
+    execution.style.borderLeft="3px solid #504A45"
+   backimg.style.backgroundImage="url(image/design.webp)"
+   text.innerHTML="<p >Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings.</p>"
+})
+project.addEventListener("click",function(){
+    this.style.borderLeft="3px solid red";
+    this.style.color="#fff";
+    design.style.color="#504A45"
+    design.style.borderLeft="3px solid #504A45"
+    execution.style.color="#504A45"
+    execution.style.borderLeft="3px solid #504A45"
+    backimg.style.backgroundImage="url(image/project.webp)"
+    text.innerHTML=" <p>Once we have a design, our production team takes the lead in bringing it to life. We manage all stages of the project, from build specifications and technical drawings to site surveys, vendor management, and 2D & 3D production. We have an extensive network of partners to meet each unique design and project need.</p>"
+ })
+ execution.addEventListener("click",function(){
+    this.style.borderLeft="3px solid red";
+    this.style.color="#fff";
+    design.style.color="#504A45"
+    design.style.borderLeft="3px solid #504A45"
+    project.style.color="#504A45"
+    project.style.borderLeft="3px solid #504A45"
+    backimg.style.backgroundImage="url(image/execution.webp)"
+    text.innerHTML="  <p>We’re with you every step of the way, from the project initiation to launch day. Our production and design teams are onsite to direct and guide the process down to the last point of completion, ensuring success across the built space and experience.</p>"
+    
+ })
