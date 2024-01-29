@@ -73,3 +73,15 @@ project.addEventListener("click",function(){
       clickable: true,
     },
   });
+
+
+
+  function loaderanimate(){
+    var loader=document.querySelector(".loader")
+
+  setTimeout(()=>{
+   loader.style.top="-100%"
+  },2000)
+  };
+
+  loaderanimate();
