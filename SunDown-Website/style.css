@@ -543,7 +543,7 @@ p {
 .footer {
   height: 100vh;
   width: 100%;
-  background-color: #000;
+ background: linear-gradient(#f23f1b,#000);
   z-index: 9;
   position: fixed;
   bottom: 0;
@@ -560,7 +560,6 @@ p {
 
 /* loader */
 
-
 .loader{
   height: 100%;
   width: 100%;
@@ -569,4 +568,49 @@ p {
   top: 0;
   z-index: 10000;
   transition: top ease .5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.loader h1{
+  font-size: 4vw;
+  font-weight: 800;
+  color: transparent;
+  background: linear-gradient(to right,#f0b255, #cf2301);
+  -webkit-background-clip: text;
+  position: absolute;
+  opacity: 0;
+  animation-name: loaderanimate;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+
+}
+
+.loader h1:nth-child(2){
+  animation-delay: 2s;
+}
+.loader h1:nth-child(3){
+  animation-delay: 3s;
+}
+
+@keyframes loaderanimate {
+  0%{
+  opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+
+  90%{
+    opacity: 1;
+  }
+
+  100%{
+
+  }
+  
+}
+
+

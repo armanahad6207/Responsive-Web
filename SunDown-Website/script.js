@@ -78,10 +78,15 @@ project.addEventListener("click",function(){
 
   function loaderanimate(){
     var loader=document.querySelector(".loader")
-
+    var loadertxt=document.querySelector(".loadertxt")
   setTimeout(()=>{
    loader.style.top="-100%"
-  },2000)
+  },4000)
+
+  setTimeout(()=>{
+    
+  })
   };
+  
 
   loaderanimate();
