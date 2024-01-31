@@ -83,10 +83,34 @@ project.addEventListener("click",function(){
    loader.style.top="-100%"
   },4000)
 
-  setTimeout(()=>{
-    
-  })
+  
   };
   
 
   loaderanimate();
+
+
+  var menu=document.querySelector(".menu");
+  var menu_list=document.querySelector(".menu_list");
+  var nav=document.querySelector("nav");
+  var openmenu=document.querySelector("#open-menu");
+  var closemenu=document.querySelector("#close-menu");
+  var body = document.querySelector("body");
+   var flag=true;
+  menu.addEventListener('click',function(){
+     if(flag){
+      menu_list.style.top="0";
+      closemenu.style.opacity=1;
+      openmenu.style.opacity=0;
+      body.style.overflow = "hidden"; 
+      flag=false;
+     }
+     else{
+      menu_list.style.top="-100%";
+      closemenu.style.opacity=0;
+      openmenu.style.opacity=1;
+      body.style.overflow = "scroll";
+      flag=true;
+     }
+    
+  })
